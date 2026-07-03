@@ -1,6 +1,9 @@
 /* ==========================================================================
-   BOT CONFIGURATION FILE
-   CREDITS: MADE BY MAJORRITY/DARKLESSTTV
+   ✨ TITAN BOT — CORE CONFIGURATION
+   🎁 CREATED BY MAJORRITY / DARKLESSTTV AS A GIFT TO THE COMMUNITY
+   
+   "Built with passion, shared with love. Drop this into any server 
+    to elevate your community to the next level."
    ========================================================================== */
 
 import { logger } from '../utils/logger.js';
@@ -9,14 +12,11 @@ export const botConfig = {
   // ==========================================
   // BOT PRESENCE (Under the bot name)
   // ==========================================
-  // `status` options: "online", "idle", "dnd", "invisible"
   presence: {
     status: "online",
-
-    // Activity types: 0=Playing, 1=Streaming, 2=Listening, 3=Watching, 4=Custom, 5=Competing
     activities: [
       {
-        name: "MADE BY MAJORRITY/DARKLESSTTV",
+        name: "🎁 Gift from Majorrity & Darklessttv!",
         type: 0, // 0 = Playing
       },
     ],
@@ -45,11 +45,11 @@ export const botConfig = {
     statusColors: {
       pending: "#FFA500",
       approved: "#00FF00",
-      disabled: "#FF0000",
+      denied: "#FF0000",
     },
-    applicationCooldown: 24, // In hours
-    deleteDeniedAfter: 7,    // In days
-    deleteApprovedAfter: 30,  // In days
+    applicationCooldown: 24,
+    deleteDeniedAfter: 7,
+    deleteApprovedAfter: 30,
     managerRoles: [],
   },
 
@@ -100,7 +100,7 @@ export const botConfig = {
       },
     },
     footer: {
-      text: "MADE BY MAJORRITY/DARKLESSTTV",
+      text: "✨ Made by Majorrity & Darklessttv — A gift for all servers!",
       icon: null,
     },
     thumbnail: null,
@@ -128,7 +128,7 @@ export const botConfig = {
     begMin: 5,
     begMax: 50,
     robSuccessRate: 0.4,
-    robFailJailTime: 3600000, // 1 hour in ms
+    robFailJailTime: 3600000,
   },
 
   // ==========================================
@@ -158,11 +158,11 @@ export const botConfig = {
   // GIVEAWAY SETTINGS
   // ==========================================
   giveaways: {
-    defaultDuration: 86400000, // 24 hours
+    defaultDuration: 86400000,
     minimumWinners: 1,
     maximumWinners: 10,
-    minimumDuration: 300000,     // 5 minutes
-    maximumDuration: 2592000000, // 30 days
+    minimumDuration: 300000,
+    maximumDuration: 2592000000,
     allowedRoles: [],
     bypassRoles: [],
   },
